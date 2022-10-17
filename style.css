@@ -8,9 +8,32 @@
         justify-content: space-around;
         align-items: center;
         align-content: space-between;
+        text-align: center;
+        flex-direction: column;
     }
+
 header{
     background-color: black;
     color: antiquewhite;
-    font-size: 0.875em; /* 14pt */
+}
+
+.heading{
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1em;
+}
+
+.text{
+    font-size: 0.875em;
 }
