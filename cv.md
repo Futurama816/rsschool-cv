@@ -70,6 +70,8 @@ My name is David Mdzinarishvili and I am a Computer Science student who is study
  
 > console.log(getSubjects(profI));
 > console.log(getSubjects(profII));
+>
+
 ## Experience
 * Created and employed SQL and MongoDB databases
 * Developed several basic applications in C#, React and Javascript
