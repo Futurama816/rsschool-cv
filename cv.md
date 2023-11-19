@@ -9,11 +9,11 @@ My name is David Mdzinarishvili and I am a Computer Science student who is study
 * Knowledgeable in HTML/CSS, Javascript and React 
 ## Coding Samples 
 > const express = require("express");
->
+
 > const app = express();
->
+
 > const port = process.env.port || 4000;
->
+
 > function intValidation(obj, objName, value){//the subject code, experience and lecturer ID should all be integers
 >   if (Number.isInteger(value)) {
 >       obj[objName] = value
@@ -39,23 +39,23 @@ My name is David Mdzinarishvili and I am a Computer Science student who is study
 >       intValidation(this, 'experience', experience)//experience is in years
 >       intValidation(this, 'lecturerID', lecturerID)
 >   }
-> 
+
 >   getDetails(){return `Last Name: ${this.lastName}, First Name: ${this.firstName}, Track: ${this.track}, Department: ${this.department}, Experience:
 >     ${this.experience} years, ID: ${this.lecturerID}`;}
 > }
->
+
 > const introToStats = new subject ("Introduction to Statistics", 21101, "math")
 > const calcII = new subject ("Calculus II", 21232, "math")
 > const medivalIslam = new subject ("The Islamic Golden Ages: from the 7th to 13th century", 46202, "history")
->
+
 > const profI = new Lecturer("Hoffman", "Mordecai", "full time adjunct", "math", 5, 578320)
 > const profII = new Lecturer("Grim", "Noah", "guest", "history", 0, 201896)
->
+
 > function assignSubjects(lecturer, subject){
 >    lecturer.subjects = lecturer.subjects || [] // creates an array of subjects for each lecturer
 >   lecturer.subjects.push(subject)
 > }
->
+
 > function getSubjects(lecturer) {
 >   if (lecturer.subjects && lecturer.subjects.length > 0) {
 >     return lecturer.subjects.map(subject => subject.name);
@@ -63,11 +63,11 @@ My name is David Mdzinarishvili and I am a Computer Science student who is study
 >     return "No subjects assigned yet.";
 >   }
 > }
->
+
 > assignSubjects(profI, introToStats);
 > assignSubjects(profI, calcII);
 > assignSubjects(profII, medivalIslam);
-> 
+ 
 > console.log(getSubjects(profI));
 > console.log(getSubjects(profII));
 ## Experience
