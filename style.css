@@ -51,7 +51,7 @@ nav {
 main {
     padding: 20px;
     background-color: black;
-    color: whitesmoke;
+    color: #f5f5f5;
     margin: 0;
     display: grid;
     grid-template-columns: 1fr minmax(0, 2fr); /* Set minimum width for the second column */
@@ -61,20 +61,32 @@ main {
 
 #centered {
     background-color: black;
-    color: white;
+    color: #f5f5f5;
     padding: 20px;
     overflow: hidden; /* Prevent content overflow */
 }
 
 #side {
     background-color: grey;
-    color: white;
+    color: #f5f5f5;
     padding: 20px;
 }
 
 footer {
     background-color: #121f54;
-    color: whitesmoke;
+    color: #f5f5f5;
     padding: 10px;
-    text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f5f5f5;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: black;
 }
