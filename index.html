@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="CV">CV of David Mdzinarishvili</h1>
+        <nav>
+            <ul id="navbar">
+                <li><a href="#contact-info">Contact Info</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#coding-samples">Coding Samples</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#language">Language</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="side">
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>IB diploma from New School of Geogia</li>
+                    <li>C# certificate</li>
+                    <li>Currently enrolled in Ilia State university</li>
+                </ul>
+            </section>
+            <section id="language">
+                <h2>Language</h2>
+                <ul>
+                    <li>Fluent in both English and Georgian</li>
+                </ul>
+            </section>
+            <section id="contact-info">
+                <h2>Contact Info</h2>
+                <ul>
+                    <li>Telephone: 599 49 55 05</li>
+                    <li>E-Mail: DMsaqartvelo@gmail.com</li>
+                </ul>
+            </section>
+        </div>
+    <div id="centered">
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>My name is David Mdzinarishvili and I am a Computer Science student who is studying to become a full stack web developer.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Knowledgeable in C, C++ and C#</li>
+            <li>Knowledgeable in HTML/CSS, Javascript and React</li>
+        </ul>
+    </section>
+
+    <section id="coding-samples">
+        <h2>Coding Sample</h2>
+        <pre>
+            const express = require("express");
+
+            const app = express();
+
+            const port = process.env.port 4000;
+            function intValidation(obj, objName, value) {
+                // the subject code, experience, and lecturer ID should all be integers
+                if (Number.isInteger(value)) {
+                    obj[objName] = value;
+                } else {
+                    throw new Error(`${objName} should be an integer.`);
+                }
+            }
+
+            class subject {
+                constructor(name, code, department) {
+                    this.name = name;
+                    intValidation(this, 'code', code); // numerical code for the class
+                    this.department = department;
+                }
+
+                getDetails() {
+                    return `Name: ${this.name}, Code: ${this.code}, department: ${this.department};`;
+                }
+            }
+
+            class Lecturer {
+                constructor(lastName, firstName, track, department, experience, lecturerID) {
+                    this.lastName = lastName;
+                    this.firstName = firstName;
+                    this.track = track; /* assuming the university follows the American system the tracks would be part-time adjunct, full time adjunct, tenure track, fully tenured along with guest lecturers*/
+                    this.department = department;
+                    intValidation(this, 'experience', experience); // experience is in years
+                    intValidation(this, 'lecturerID', lecturerID);
+                }
+
+                getDetails() {
+                    return `Last Name: ${this.lastName}, First Name: ${this.firstName}, Track: ${this.track}, Department: ${this.department}, Experience: ${this.experience} years, ID: ${this.lecturerID};`;
+                }
+            }
+
+            const introToStats = new subject("Introduction to Statistics", 21101, "math");
+            const calcII = new subject("Calculus II", 21232, "math");
+            const medievalIslam = new subject("The Islamic Golden Ages: from the 7th to 13th century", 46202, "history");
+
+            const profI = new Lecturer("Hoffman", "Mordecai", "full time adjunct", "math", 5, 578320);
+            const profII = new Lecturer("Grim", "Noah", "guest", "history", 0, 201896);
+
+            function assignSubjects(lecturer, subject) {
+                lecturer.subjects = lecturer.subjects || []; // creates an array of subjects for each lecturer
+                lecturer.subjects.push(subject);
+            }
+
+            function getSubjects(lecturer) {
+                if (lecturer.subjects && lecturer.subjects.length > 0) {
+                    return lecturer.subjects.map(subject => subject.name);
+                } else {
+                    return "No subjects assigned yet.";
+                }
+            }
+
+            assignSubjects(profI, introToStats);
+            assignSubjects(profI, calcII);
+            assignSubjects(profII, medievalIslam);
+
+            console.log(getSubjects(profI));
+            console.log(getSubjects(profII));
+            </pre>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+      <ul>
+        <li>Created and employed SQL and MongoDB databases</li>
+        <li>Developed several basic applications in C#, React and Javascript</li>
+      </ul>
+    </section>
+</div>
+</main>
+    <footer>  <a href="https://rs.school/js-en/"><img src="rsschool.png" alt="black and yellow logo" width="50" height="60"></a>
+    <a href="https://github.com/Futurama816/rsschool-cv">GitHub repository</a>
+    <p>28/11/2023</p>
+</footer>
+</body>
+</html>
