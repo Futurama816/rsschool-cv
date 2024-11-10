@@ -1,2 +1,2 @@
 # rsschool-cv
-CV &amp; resume repository
+https://futurama816.github.io/rsschool-cv/cv
