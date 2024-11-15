@@ -16,26 +16,6 @@ AWS foundations badge
 ### C languages
 Fluent in all three C languages
 ## coding samples
->hdl
->CHIP Not {
->    IN in;
->   OUT out;
->
->   PARTS:
->      // joins inputs of two NAND gates together
->       Nand(a=in, b=in, out=out);
->}
->
->CHIP Or { // built OR gate using DeMorgan's Law
->   IN a, b;
->    OUT out;
->
->   PARTS:
->       Not(in=a, out=nA);
->       Not(in=b, out=nB);
->       And(a=nA, b=nB, out=andOut);
->       Not(in=andOut, out=out); // DeMorgan's Law A OR B = NOT(NOT(A) AND NOT(B))
->}
 ## experience 
 ### MongoDB server
 Created a to-do list application using React and MongoDB
