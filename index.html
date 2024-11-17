@@ -10,29 +10,95 @@
     <header>
         <nav class="horizontalElements">
             <ul>
-                <li>nav element 1</li>
-                <li>nav element 2</li>
-                <li>nav element 3</li>
+                <li><a href="#aboutMe"> About Me</a></li>
+                <li><a href="#contactInfo">Contact Information</a></li>
+                <li><a href=#knowledge>Knowledge</a></li>
+                <li><a href="#codingSample"> Coding Sample </a></li>
+                <li><a href="#exp"> Experience </a></li>
+                <li><a href="#lang"> Languages </a></li>
             </ul>
         </nav>
     </header>
+    <h1>David Mdzinarishvili: CV and resume</h1>
     <main>
         <div id="partTheFirst">
-            <p>insert about me</p>
-            <p>insert contacts</p>
+            <img id="myPic" src="profilePicture.jpg" alt="David Mdzinarishvili">
+            <h2 id="aboutMe">About Me</h2>
+            <p>I am a computer science student who is looking to start his career in web developement.
+            I wish to gain experience in testing, debugging and writing HTML, CSS, Javascript and Typescript code.
+            I am a dedicated and creative programmer and I would like to begin my career by joining your team.
+            </p>
+
+            <h2 id="contactInfo">contact information</h2>
+
+            <h3>Telephone</h3>
+            <p>599 49 55 05</p>
+            <h3>E-mail: </h3>
+            <p>DMsaqartvelo@gmail.com</p>
         </div>
         <div id="partTheSecond">
-            <p>insert skills</p>
-            <pre>insert coding samples</pre>
-            <p>insert education</p>
-            <p>insert link</p>
+            <h2 id="knowledge">Knowledge and Training</h2>
+            <h3>microsoft office</h3>
+            <p>Knowledge of Word, Powerpoint and Excel</p>
+
+            <h3>AWS</h3>
+            <p>AWS foundations badge</p>
+
+            <h3>C languages</h3>
+            <p>Knowledge of all C languages (C/C#/C++)</p>
+
+            <h3>VB.net</h3>
+            <p>completed a training program with Uniko on the use of
+                VB.net and C# in frontend desktop application developement
+            </p>
+            <h2 id="ed">Education</h2>
+                <h3>Secondary</h3>
+                <p>New School of Georgia | 2017</p>
+                <h3>University</h3>
+                <p>Ilia State University | ongoing</p>
+            <h2> coding sample</h2>
+            <pre id="codingSample">
+CHIP Or {//built OR gate using Demorgan's Law
+    IN a, b;
+    OUT out;
+
+         PARTS:
+            Not(in=a, out=nA);
+            Not(in=b, out=nB);
+            And(a=nA, b=nB, out=andOut);
+            Not(in=andOut, out=out);//Demorgan's Law A OR B=NOT(NOT(A)ANDNOT(B))
+            }
+
+CHIP Xor {//Nand implementation of XOR gate
+    IN a, b;
+    OUT out;
+
+        PARTS:
+            Nand(a=a, b=b, out=n1);
+            Nand(a=a, b=n1, out=n2);
+            Nand(a=b, b=n1, out=n3);
+            Nand(a=n2, b=n3, out=out);
+            }
+  </pre>
+        <h2 id="exp">Experience</h2>
+        <h3>VB.net</h3>
+        <p>created a frontend application to accept and validate user input"</p>
+        <h3>React and MongoDB server</h3>
+        <p>Created a to-do list application using React and MongoDB</p>
+        <h3>HDL</h3>
+        <p>Use of hardware description language to simulate the behavior of logic gates and computer chips (see above)</p>
+        <h3>mastering markdown</h3>
+        <p>first project for RSSchool 2024: <a id="blackLink" href="https://futurama816.github.io/rsschool-cv/cv">link</a></p>
+        <h2 id="lang">Languages</h2>
+        <p>fluent in both English and Geogian</p>
         </div>
     </main>
     <footer class="horizontalElements">
         <ul>
-            <li>footer element 1</li>
-            <li>footer element 2</li>
-            <li>footer element 3</li>
+            <li><img id="myLogo" src="rs-school-logo.svg" alt="RSSchool logo"></li>
+            <li>2024</li>
+            <li><a href="https://futurama816.github.io/">Github link</a></li>
+            <li><a href="https://rs.school/courses/javascript">course link</a></li>
         </ul>
     </footer>
 </body>

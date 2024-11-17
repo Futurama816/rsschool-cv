@@ -1,7 +1,39 @@
-* {
+* {/*remove defaults*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/*link styles*/
+a {
+    color: #eff6f9;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+#blackLink{
+    color: #000000;
+}
+
+
+#blackLink:hover{
+    color: #2980b9;
+    font-weight: bold;
+}
+/*set sizes for pictures*/
+#myPic{
+    max-width:450px;
+    max-height:450px;
+}
+
+#myLogo{
+    background-color: gold;
+    width: 75px;
+    height: 75px;
 }
 
 body {
@@ -9,7 +41,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color:#eff6f9;;
+    background-color:#eff6f9;
     color: #1a1919;
     display: flex;
     flex-direction: column;
@@ -31,15 +63,18 @@ body {
     justify-content: center;
 }
 
-.horizontalElements li {
+.horizontalElements li{
     margin: 0 15px;
 }
 
-.horizontalElements li:hover {
+.horizontalElements li:hover a{
     background-color: #f23d00;
     cursor:pointer;
 }
 
+h1{
+    text-align: center;
+}
 
 main {
     display: flex;
@@ -51,16 +86,20 @@ main {
 /* cards */
 #partTheFirst,
 #partTheSecond {
+    text-align: center;
     padding: 20px;
     border-radius: 15px;
     background-color: #eff6f9;
 }
-/* left card */
+pre{
+    text-align: left;
+}
+/* left card fills 1/3 of main*/
 #partTheFirst {
     flex: 1;
     background-color: #f23d00;
 }
-/* right card*/
+/* right card fills 2/3 of main*/
 #partTheSecond {
     flex: 2;
     background-color: #eff6f9;
@@ -71,7 +110,7 @@ main {
     margin-bottom: 10px;
 }
 
-/* coding sample */
+/* coding sample: retro styling */
 pre {
     background-color: #000000;
     padding: 10px;
