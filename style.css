@@ -98,6 +98,7 @@ pre{
 #partTheFirst {
     flex: 1;
     background-color: #f23d00;
+    color: #eff6f9;
 }
 /* right card fills 2/3 of main*/
 #partTheSecond {
